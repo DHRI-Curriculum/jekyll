@@ -3,7 +3,7 @@
 
 ## Windows
 
-Note that Jekyll does not officully support Windows. But it still work.
+Note that Jekyll does not officully support Windows. But it still works.
 
 1. Download the latest version of (RubyInstaller for Windows)[https://rubyinstaller.org/downloads/]. This should be the first item under the heading "WITH DEVKIT."
 2. Run the executable installer. Use default options.
@@ -23,22 +23,60 @@ At this point, Jekyll should be installed and available. You can type `jekyll --
 
 ## Mac OS
 
+### First things first: Homebrew
+
 To install Jekyll, you'll first need Ruby. And to install Ruby, you'll first need Homebrew.
 
-1\. Open your terminal by clicking the magnifying glass in the top right of your desktop and typing `terminal` in the bar that appears. Terminal should be the first application that appears.
-2\. Enter the following:
+Open your terminal by clicking the magnifying glass in the top right of your desktop and typing `terminal` in the bar that appears. Terminal should be the first application that appears.
 
-	xcode-select --install
+Enter the following:
+
+```sh
+xcode-select --install
+```
 
 You may need to agree to a terms and conditions window that appears.
-3\. After the xcode installation completes, enter the following to install Homebrew. (Make sure you don't omit the beginning or end of this command.)
 
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-4\. 
+After the installation above completes, enter the following to install Homebrew. (Make sure you don't omit the beginning or end of this command.)
 
+```sh
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
+### Time to install Ruby
 
+You should now be able to run the following command in your command line in order to install Ruby:
 
+```sh
+brew install ruby
+```
 
+Once the install finishes, you can test that the ruby install worked by running the following command:
 
+```sh
+which ruby
+```
 
+The response should be the path to the ruby installation on your computer. If you run into any troubles in the last steps above, try adding the path to your shell configuration by running:
+
+```sh
+export PATH=/usr/local/opt/ruby/bin:$PATH
+```
+
+If you have any trouble with the install beyond what is covered here, the Jekyll website provides some great [Troubleshooting advice](https://jekyllrb.com/docs/troubleshooting/)
+
+### Finally, Jekyll!
+
+Now we are ready to install Jekyll, which is easily accomplished by running the following command in your terminal:
+
+```sh
+gem install bundler jekyll
+```
+
+That should be it! We're ready to go. If you want to double check whether Jekyll is installed, run the following command:
+
+```sh
+jekyll -v
+```
+
+It should provide you with the version number of the local Jekyll installation.
