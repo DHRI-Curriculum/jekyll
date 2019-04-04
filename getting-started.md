@@ -1,4 +1,4 @@
-# Getting Started
+# Getting Started: Setting Up A First Website
 
 Now we are ready to get our first site set up and running. In order to do so, we need to create a new site. You can create a site inside an already existing folder but in the following, we'll set up a clean site using Jekyll's own generator.
 
