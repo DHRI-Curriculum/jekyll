@@ -6,7 +6,7 @@ Now we are ready to get our first site set up and running. In order to do so, we
 
 First, you need to decide where your site should live locally. In order to navigate to the Desktop folder of your user account, run this command in your command line:
 
-```sh
+```console
 cd ~/Desktop
 ```
 
@@ -14,13 +14,13 @@ _In our example, we'll put the site on your computer's desktop but you may want 
 
 We will create a new Jekyll site on the desktop by writing:
 
-```sh
+```console
 jekyll new my-site
 ```
 
 This command may take some time to run, so take a break—stand up and stretch your arms—while it runs. Once it is done, your command line should have an output that looks something like this:
 
-```sh
+```console
 Running bundle install in ~/Desktop/my-site... 
   Bundler: Fetching gem metadata from https://rubygems.org/...........
   Bundler: Fetching gem metadata from https://rubygems.org/.
@@ -92,13 +92,13 @@ New jekyll site installed in ~/Desktop/my-site.
 
 We are now ready to navigate into our new site directory using the change directory command `cd`:
 
-```sh
+```console
 cd my-site
 ```
 
 Once inside the directory, we will build the site and make it available to us. Jekyll provides a command which you will use _a lot_ if you work with the generator (write it down on a notepad next to you!):
 
-```sh
+```console
 bundle exec jekyll serve
 ```
 
@@ -131,7 +131,7 @@ In the next couple of pages, we will work more in-depth with a site to understan
 
 For now, let's go back to the command line where you should still see the server running:
 
-```sh
+```console
 Configuration file: ~/Desktop/my-site/_config.yml
             Source: ~/Desktop/my-site
        Destination: ~/Desktop/my-site/_site
