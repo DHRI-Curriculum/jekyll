@@ -6,4 +6,4 @@ In this session, we will use Jekyll, a popular static site generator written in 
 
 [What Is a Static Site](intro.md)  
 [Installation](installation.md)  
-[Getting Started](getting-started.md)  
+[Getting Started: Setting Up A First Website](getting-started.md)  
