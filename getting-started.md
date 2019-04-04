@@ -109,6 +109,39 @@ Once you run this command, Jekyll will start up a local server, which you can na
 
 The first site that Jekyll has generated looks something like this:
 
-![image caption](images/blank-site.png)
+![Image showing a first, blank website, with a lot of occurrences of the word "awesome" in different places](images/blank-site.png)
 
-A lot of "awesome" and too little content. But you have a server running on your computer, complete with static HTML files that you can upload anywhere and that will look exactly the same everywhere.
+A lot of "awesome" and too little content.
+
+
+## The Backend of Your First Site
+
+If you use the GUI interface on your computer (Finder on a Mac and Explorer on a PC) and navigate to the directory where we set up the site, you will see that it contains a number of files:
+
+![Image showing a list of all the sites in the directory where the first site was set up.](images/blank-site-directory.png)
+
+This is what is called the "backend" of your site. For now, we will not care too much about the files but we will look more in-depth at some of them in the next couple of pages in this workshop.
+
+For now, you can just peek into the folder called `_site` and see that Jekyll has automatically generated content in this folder, which can be uploaded to any server anywhere and that will look exactly the same everywhere. Jekyll uses these files for the local server that is located at http://localhost:4000/.
+
+
+## Exiting
+
+In the next couple of pages, we will work more in-depth with a site to understand Jekyll's structure and formatting but this is the simple way to set up a site based on blog posts.
+
+For now, let's go back to the command line where you should still see the server running:
+
+```sh
+Configuration file: ~/Desktop/my-site/_config.yml
+            Source: ~/Desktop/my-site
+       Destination: ~/Desktop/my-site/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 0.891 seconds.
+ Auto-regeneration: enabled for '~/Desktop/my-site'
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+```
+
+Hold down the `ctrl` key on your keyboard and press `c` simultaneously. The server should shut down and you should be back at a `$` prompt.
