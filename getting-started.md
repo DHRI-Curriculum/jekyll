@@ -86,3 +86,20 @@ Running bundle install in ~/Desktop/my-site...
   Bundler: https://sass-lang.com/blog/posts/7828841The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
 New jekyll site installed in ~/Desktop/my-site. 
 ```
+
+
+## Serve the Server
+
+We are now ready to navigate into our new site directory using the change directory command `cd`:
+
+```sh
+cd my-site
+```
+
+Once inside the directory, we will build the site and make it available to us. Jekyll provides a command which you will use _a lot_ if you work with the generator (write it down on a notepad next to you!):
+
+```sh
+bundle exec jekyll serve
+```
+
+Once you run this command, Jekyll will start up a local server, which you can navigate to in your web browser by going to http://localhost:4000/.
