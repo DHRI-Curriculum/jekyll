@@ -103,3 +103,12 @@ bundle exec jekyll serve
 ```
 
 Once you run this command, Jekyll will start up a local server, which you can navigate to in your web browser by going to http://localhost:4000/.
+
+
+## Your First Site
+
+The first site that Jekyll has generated looks something like this:
+
+![image caption](images/blank-site.png)
+
+A lot of "awesome" and too little content. But you have a server running on your computer, complete with static HTML files that you can upload anywhere and that will look exactly the same everywhere.
